@@ -1,0 +1,822 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+/* Common classes */
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
+/* header section */
+.header-section > div > div {
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.nav-logo {
+  max-width: 154px;
+  max-height: 24px;
+}
+.nav-logo > a > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.nav-section > ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+.nav-section > ul > li > a {
+  color: #18191f;
+}
+.btn-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.btn1 {
+  color: #4caf4f;
+  font-size: 14px;
+}
+.btn2 {
+  color: white;
+  background-color: #4caf4f;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+.nav-section > ul > li > .active {
+  color: #4caf4f;
+}
+.nav-section > ul > li > a:hover {
+  color: #4caf4f;
+}
+.menu {
+  display: none;
+  font-size: 1.5rem;
+}
+
+/* Banner section */
+.banner-section > div > div {
+  justify-content: space-between;
+}
+.banner-section {
+  /* margin-block: 40px;   */
+  padding-block: 40px;
+}
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.banner-content > h1 {
+  font-size: 64px;
+  color: #4d4d4d;
+  font-weight: bold;
+}
+.banner-content > h1 > span {
+  color: #4caf4f;
+}
+.banner-content > p {
+  color: #717171;
+}
+.btn {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.btn > a {
+  background-color: #4caf4f;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 4px;
+}
+.banner-img {
+  max-width: 391px;
+  max-height: 407px;
+}
+.banner-img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* client section */
+.client-section > div > div {
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.client > h1 {
+  text-align: center;
+  color: #4d4d4d;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.client > p {
+  text-align: center;
+  color: #717171;
+}
+
+.client-logo > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  /* justify-content: space-between; */
+}
+
+/* Manage section */
+.manage-section {
+  /* margin-block: 40px; */
+  padding-block: 40px;
+}
+.manage-section > div > h1 {
+  text-align: center;
+  color: #4d4d4d;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.manage-section > div > p {
+  text-align: center;
+  color: #717171;
+}
+
+/* Card section */
+.card-section > div > div {
+  justify-content: space-between;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.card-img {
+  max-width: 65px;
+  max-height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-content > h1 {
+  text-align: center;
+  color: #4d4d4d;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.card-content > p {
+  text-align: center;
+  color: #717171;
+  font-size: 14px;
+}
+.card-img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Unseen section */
+.unseen-section {
+  /* margin-block: 40px; */
+  padding-block: 40px;
+}
+.unseen-section > div > div {
+  justify-content: space-between;
+  align-items: center;
+}
+.unseen-img {
+  max-width: 442px;
+  max-height: 443px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.unseen-img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.unseen-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.unseen-content > h1 {
+  font-size: 36px;
+  color: #4d4d4d;
+}
+.unseen-content > p {
+  font-size: 14px;
+  color: #717171;
+}
+.unseen-btn {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.unseen-btn > a {
+  background-color: #4caf4f;
+  color: white;
+  padding: 14px 34px;
+  border-radius: 4px;
+}
+
+/* Helping section */
+.helping-section > div > div {
+  justify-content: space-between;
+  align-items: center;
+}
+.helping-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.up,
+.down {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.helping-content > h1 {
+  font-size: 36px;
+  color: #4d4d4d;
+  margin-bottom: 10px;
+}
+.helping-content > h1 > span {
+  color: #4caf4f;
+}
+.helping-content > p {
+  color: #18191f;
+}
+.member,
+.club,
+.event,
+.payment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.member-img,
+.club-img,
+.event-img,
+.payment-img {
+  max-width: 48px;
+  max-height: 48px;
+}
+.member-img > img,
+.club-img > img,
+.event-img > img,
+.payment-img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.event-content > p,
+.payment-content > p,
+.club-content > p,
+.member-content > p {
+  margin-bottom: 6px;
+  color: #4d4d4d;
+  font-size: 28px;
+}
+.event-content > span,
+.payment-content > span,
+.club-content > span,
+.member-content > span {
+  color: #717171;
+}
+
+/* pana section */
+.pana-section {
+  /* margin-block: 40px; */
+  padding-block: 40px;
+}
+.pana-section > div > div {
+  justify-content: space-between;
+  align-items: center;
+}
+.pana-img {
+  max-width: 441px;
+  max-height: 453px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pana-img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.pana-content > h1 {
+  font-size: 36px;
+  color: #4d4d4d;
+}
+.pana-content > p {
+  font-size: 14px;
+  color: #717171;
+  margin: 16px 0 32px 0;
+}
+.pana-btn {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.pana-btn > a {
+  color: white;
+  background-color: #4caf4f;
+  padding: 14px 32px;
+  border-radius: 4px;
+}
+
+/* smith section */
+.smith-section > div > div {
+  justify-content: space-between;
+}
+.smith-img {
+  max-width: 326px;
+  max-height: 326px;
+}
+.smith-img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.smith-content > p {
+  color: #717171;
+  margin-bottom: 16px;
+}
+.smith-content > h1 {
+  color: #4caf4f;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+.smith-content > ul {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+.smith-content > ul > li > span {
+  color: #4caf4f;
+}
+
+/* Marketing section */
+.marketing-section {
+  /* margin-block: 40px; */
+  padding-block: 40px;
+}
+.marketing-section > div > h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #4d4d4d;
+  margin-bottom: 10px;
+}
+.marketing-section > div > p {
+  text-align: center;
+  color: #717171;
+}
+
+/* Card2 section */
+.card2-section > div > div {
+  justify-content: center;
+  gap: 50px;
+}
+.card2 {
+  position: relative;
+}
+.card2-img {
+  max-width: 368px;
+  max-height: 286px;
+}
+.card2-img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.card2-content {
+  background-color: #f5f7fa;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  top: 200px;
+  left: 60px;
+  border-radius: 8px;
+}
+.card2-content > p {
+  color: #717171;
+  text-align: center;
+}
+.card2-content > a {
+  color: #4caf4f;
+}
+
+/* pelle section */
+.pelle-section {
+  /* margin: 40px 0 40px 0; */
+  padding-block: 40px;
+}
+.pelle-section > div > h1 {
+  font-size: 64px;
+  color: #263238;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.pelle-section > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pelle-section > div > div > a {
+  color: white;
+  background-color: #4caf4f;
+  padding: 14px 32px;
+  border-radius: 4px;
+}
+
+/* Footer section */
+.footer-section {
+  background-color: #263238;
+}
+.footer-section > div > div {
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.naxcent {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.company-logo {
+  max-width: 191px;
+  max-height: 29px;
+}
+.company-logo > a > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.naxcent > ul {
+  display: flex;
+  gap: 20px;
+}
+.company,
+.support,
+.update {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.company > ul,
+.support > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.update > ul > li {
+  border: 1px solid white;
+  padding: 10px;
+}
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.company > h1,
+.support > h1,
+.update > h1 {
+  color: white;
+}
+.fa-brands,
+.fa-paper-plane {
+  color: white;
+}
+.naxcent > p {
+  color: white;
+  font-size: 12px;
+}
+.company > ul > li > a,
+.support > ul > li > a {
+  color: white;
+  font-size: 12px;
+}
+@media screen and (max-width: 1024px) {
+  .nav-section,
+  .nav-section > ul,
+  .btn-section {
+    flex-basis: 100%;
+    flex-direction: column;
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  #hamberger:checked ~ .nav-section,
+  #hamberger:checked ~ .nav-section > ul,
+  #hamberger:checked ~ .btn-section {
+    display: flex;
+  }
+  .header-section > div > div {
+    position: relative;
+  }
+  .nav-section {
+    padding-top: 10px;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    left: 0;
+    background: white;
+  }
+  .btn-section {
+    position: absolute;
+    top: 275px;
+    right: 0;
+    left: 0;
+    background: white;
+    padding-block: 10px;
+  }
+  .banner-section > div > div {
+    flex-direction: column-reverse;
+  }
+  .banner-section > div > div > .banner-img {
+    margin: 0 auto;
+  }
+  .banner-section {
+    padding-block: 30px;
+  }
+  .client-section > div > div {
+    gap: 30px;
+  }
+  .client-logo > ul {
+    justify-content: center;
+    gap: 60px;
+  }
+  .manage-section {
+    padding-block: 20px;
+  }
+  .unseen-section {
+    padding: 20px 0;
+  }
+
+  .pana-img,
+  .smith-img,
+  .unseen-img {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-content > h1 {
+    font-size: 44px;
+  }
+  .banner-content {
+    gap: 15px;
+  }
+  .client > h1 {
+    font-size: 26px;
+    margin-bottom: 6px;
+  }
+  .manage-section {
+    padding: 20px 0;
+  }
+  .manage-section > div > h1 {
+    font-size: 25px;
+    text-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .card-section > div > div {
+    justify-content: center;
+    gap: 30px;
+  }
+  .unseen-content > h1 {
+    font-size: 25px;
+  }
+  .unseen-content > p {
+    font-size: 12px;
+  }
+  .unseen-content {
+    gap: 15px;
+  }
+  .helping-content > h1 {
+    font-size: 25px;
+  }
+  .helping-content > p {
+    font-size: 12px;
+  }
+
+  .event-content > p,
+  .payment-content > p,
+  .club-content > p,
+  .member-content > p {
+    font-size: 20px;
+  }
+  .event-content > span,
+  .payment-content > span,
+  .club-content > span,
+  .member-content > span {
+    font-size: 10px;
+    text-wrap: nowrap;
+  }
+  .helping-section > div > div {
+    gap: 20px;
+  }
+  .pana-section {
+    padding: 20px 0;
+  }
+  .pana-content > h1 {
+    font-size: 25px;
+  }
+  .pana-content > p {
+    font-size: 12px;
+    margin-block: 8px 16px;
+  }
+  .pana-section > div > div {
+    gap: 10px;
+  }
+  .member,
+  .club,
+  .event,
+  .payment {
+    gap: 10px;
+  }
+  .smith-content > p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .smith-content > ul {
+    margin-top: 20px;
+    justify-content: center;
+    gap: 20px;
+  }
+  .marketing-section {
+    padding: 20px 0;
+  }
+  .marketing-section > div > h1 {
+    font-size: 25px;
+  }
+  .marketing-section > div > p {
+    font-size: 10px;
+  }
+  .card2-content {
+    padding: 5px 10px;
+  }
+  .card2-section > div > div {
+    gap: 40px;
+  }
+  .pelle-section > div > h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner-section {
+    padding-block: 20px;
+  }
+  .banner-content > h1 {
+    font-size: 25px;
+  }
+  .banner-content {
+    gap: 10px;
+  }
+  .client > h1 {
+    font-size: 20px;
+  }
+  .client > p {
+    text-wrap: wrap;
+  }
+  .client-logo > ul {
+    gap: 15px;
+  }
+  .client-section > div > div {
+    gap: 20px;
+  }
+  .manage-section {
+    padding: 15px 0;
+  }
+  .manage-section > div > h1 {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+  .card-section > div > div {
+    gap: 10px;
+  }
+  .card-content > h1 {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+  .card-content > p {
+    font-size: 12px;
+  }
+  .card {
+    gap: 10px;
+  }
+  .unseen-content > h1 {
+    font-size: 18px;
+  }
+  .unseen-content > p {
+    font-size: 10px;
+  }
+  .unseen-content {
+    gap: 10px;
+  }
+  .unseen-btn > a {
+    padding: 14px 32px;
+  }
+  .helping-content > h1 {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+  .event-content > p,
+  .payment-content > p,
+  .club-content > p,
+  .member-content > p {
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .helping-icons {
+    gap: 30px;
+  }
+  .pana-content > h1 {
+    font-size: 18px;
+  }
+  .pana-content > p {
+    font-size: 10px;
+  }
+  .smith-content > p {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+  .smith-content > ul {
+    margin-top: 10px;
+  }
+  .marketing-section {
+    padding: 10px 0;
+  }
+  .pelle-section {
+    padding: 20px 0;
+  }
+  .pelle-section > div > h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .footer-section > div > div {
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .naxcent {
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  .company,
+  .support,
+  .update {
+    gap: 20px;
+  }
+  .btn > a,
+  .unseen-btn > a,
+  .pana-btn > a,
+  .pelle-section > div > div > a {
+    padding: 7px 16px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .card2-content {
+    top: 145px;
+    left: 25px;
+  }
+  .pelle-section > div > h1 {
+    font-size: 20px;
+  }
+}
